@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Tuto</title>
-    <link rel="stylesheet" href="styles.css">
+    <title id="titre-page"> Télécharger mon tutoriel</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers votre fichier CSS externe -->
 </head>
 <body>
-    <h1 id="titre-principal">Bienvenue sur mon site Tuto</h1>
-    <p id="paragraphe-intro">Vous pouvez télécharger mon Tuto en cliquant sur le lien ci-dessous :</p>
-    <a id="lien-cv" href="https://github.com/lovmoz/FichierTest/blob/main/Jupe%20au%20crochet%20pour%20fillette%20avec%20Bretelles%20!%20_%20Mery%20Crochet.pdf" download>Télécharger mon tuto</a>
+    <div class="container">
+        <h1 id="titre-principal">Bienvenue sur mon site Tutoriel</h1>
+        <p id="paragraphe-intro">Vous pouvez télécharger mon Tutoriel en cliquant sur le bouton ci-dessous :</p>
+        <button id="bouton-telechargement" class="download-button" onclick="window.location.href='https://github.com/lovmoz/FichierTest/blob/main/Jupe%20au%20crochet%20pour%20fillette%20avec%20Bretelles%20!%20_%20Mery%20Crochet.pdf'">Télécharger mon tutoriel PDF</button>
+    </div>
 
+    <!-- Script JavaScript optionnel pour ajouter un événement au bouton -->
     <script>
-        // Optionnel : Script JavaScript intégré dans la page
-        document.getElementById('lien-cv').addEventListener('click', function() {
-            alert('Le lien vers le tuto a été cliqué !');
+        document.getElementById('bouton-telechargement').addEventListener('click', function() {
+            alert('Le bouton de téléchargement a été cliqué !');
+            // Vous pouvez ajouter d'autres actions ici si nécessaire
         });
     </script>
 </body>

@@ -10,8 +10,35 @@
     font-size: 1.2em;
 }
 
-#lien-cv {
-    color: green;
-    text-decoration: none; /* Supprime le soulignement par défaut */
-    font-weight: bold;
+
+/* Styles spécifiques pour le bouton de téléchargement */
+.download-button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition douce de la couleur de fond */
+}
+
+.download-button:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+/* Styles pour centrer le contenu */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Utilisation de 100vh pour occuper toute la hauteur de la fenêtre */
+    margin: 0; /* Suppression des marges par défaut du corps */
+    font-family: Arial, sans-serif; /* Utilisation d'une police de caractères sans-serif par défaut */
+}
+
+.container {
+    text-align: center; /* Centrer le contenu à l'intérieur de .container */
+    max-width: 600px; /* Largeur maximale pour le contenu */
+    padding: 20px; /* Espacement intérieur pour .container */
 }
