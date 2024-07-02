@@ -1,0 +1,17 @@
+/* styles.css */
+
+#titre-principal {
+    color: blue;
+    font-size: 2em;
+}
+
+#paragraphe-intro {
+    color: gray;
+    font-size: 1.2em;
+}
+
+#lien-cv {
+    color: green;
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    font-weight: bold;
+}
